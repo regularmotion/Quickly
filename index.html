@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<title>Draggable</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi">
+	<link rel='stylesheet' type='text/css' href='css/draggable.css'/>
+</head>
+<style>
+* {
+	border: 0;
+	margin: 0;
+	padding: 0;
+	
+	color: #f1f1f1;
+	font-size: 15pt;
+	font-weight: 900;
+	font-family: Helvetica;
+	text-shadow: 0 -1px 1px #000, 0 1px 1px #000;
+}
+
+body {
+	background: #f1f1f1;
+}
+div.quickly {
+	position: absolute;
+	top: 50px;
+	width: 80px;
+	height: 80px;
+	background: blue;
+}
+div.quickly.hovered {
+	background: #234985;
+}
+div.quickly.clicked {
+	-webkit-transform: scale(1.2);
+	-moz-transform: scale(1.2);
+	-o-transform: scale(1.2);
+	opacity: .5;
+}
+div#quickly1 {
+	left: 100px;
+}
+div#quickly2 {
+	left: 200px;
+}
+div#quickly3 {
+	left: 300px;
+}
+</style>
+<body>
+
+<div id='quickly1' class='quickly'>Quickly 1</div>
+<div id='quickly2' class='quickly'>Quickly 2</div>
+<div id='quickly3' class='quickly'>Quickly 3</div>
+
+<script type='text/javascript' src='js/extensions.js'></script>
+<script type='text/javascript' src='js/quickly.js'></script>
+<!--
+<script type='text/javascript' src='js/quickly_lite.js'></script>
+-->
+<script>
+new Quickly('quickly1', function(e) {  
+	
+});
+new Quickly('quickly2', function(e) {  
+	
+});
+new Quickly('quickly3', function(e) {  
+	
+});
+</script>
+</body>
+</html>
